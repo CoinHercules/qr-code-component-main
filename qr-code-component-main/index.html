@@ -31,11 +31,11 @@
     .qr-image {
       margin: 15px;
       border-radius: 12px;
-      width: 215px;
-      height: 215px;
+      width: 240px;
+      height: 240px;
     }
 
-    .title {
+    .first-paragraph {
       font-family: "Outfit", sans-serif;
       font-optical-sizing: auto;
       font-weight: 700;
@@ -44,10 +44,14 @@
       flex-direction: column;
       margin: 0px 15px 15px 15px;
       text-align: center;
-      font-size: 15px;
+      font-size: 18px;
+      
+      p {
+        margin: 0px;  
+      }
     }
 
-    .description {
+    .second-paragraph {
       font-family: "Outfit", sans-serif;
       font-optical-sizing: auto;
       font-weight: 100;
@@ -56,7 +60,11 @@
       flex-direction: column;
       margin: 0px 15px 15px 15px;
       text-align: center;
-      font-size: 11px;
+      font-size: 13px;
+
+      p {
+        margin: 0px;  
+      }
     }
   </style>
 </head>
@@ -64,16 +72,16 @@
 <body>
   <div class="container">
     <div class="qr-code">
-      <img class="qr-image" src="./images/image-qr-code.png" />
+      <img class="qr-image" src="./images/image-qr-code.png" alt="QR Code Image" />
     </div>
-    <div class="title">
-      <span>Improve your front-end</span>
-      <span>skills by building projects</span>
+    <div class="first-paragraph">
+      <p>Improve your front-end</p>
+      <p>skills by building projects</p>
     </div>
-    <div class="description">
-      <span>Scan the QR code to visit Frontend</span>
-      <span>Mentor and take your coding skills to</span>
-      <span>the next level</span>
+    <div class="second-paragraph">
+      <p>Scan the QR code to visit Frontend</p>
+      <p>Mentor and take your coding skills to</p>
+      <p>the next level</p>
     </div>
   </div>
 </body>
